@@ -23,4 +23,4 @@
 [submodule "hybris-patches"]
 	path = hybris-patches
 	url = https://github.com/mer-hybris/hybris-patches
-	branch = hybris-sony-aosp-pie
+	branch = hybris-sony-aosp-10
