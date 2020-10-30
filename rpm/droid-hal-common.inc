@@ -14,24 +14,9 @@
 #define WANT_ADRENO_QUIRKS 1\
 %{nil}
 
-%define straggler_files \
-/bt_firmware \
-/bugreports \
-/cache \
-/d \
-/dsp \
-/firmware \
-/odm \
-/persist \
-/product \
-/sdcard \
-/verity_key \
-%{nil}
-
-# On Android 8 the system partition is (intended to be) mounted on /.
+# On Android 8+ the system partition is (intended to be) mounted on /.
 %define makefstab_skip_entries / /vendor /dev/stune /dev/cpuset /sys/fs/pstore /dev/cpuctl
 Requires: droid-system
-Requires: droid-system-vendor
 
 %define pre_actions /bin/sh setup-sources.sh
 
