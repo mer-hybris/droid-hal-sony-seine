@@ -9,6 +9,8 @@
 %define have_custom_img_boot 1
 %define have_custom_img_recovery 1
 
+%define enable_dtbo_update 1
+
 # want adreno quirks is required for browser at least, and other subtle issues
 %define android_config \
 #define WANT_ADRENO_QUIRKS 1\
