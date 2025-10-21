@@ -26,3 +26,5 @@ Requires: droid-system
 
 Source99: droid-hal-common.inc
 
+# fs_config_generator.py requires python
+BuildRequires: python
